@@ -1,0 +1,44 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--primary-green);
+    color: var(--secondary-orange);
+  }
+  
+  .hero-content {
+    max-width: 500px;
+  }
+  
+  .hero h1 {
+    font-family: 'Markazi Text', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .reserve-btn {
+    background-color: var(--primary-yellow);
+    color: var(--primary-green);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .reserve-btn:hover {
+    background-color: var(--highlight-yellow);
+  }
+  
+  .hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  

@@ -1,0 +1,43 @@
+.reservation-form-container {
+    padding: 2rem;
+    background-color: var(--secondary-pink);
+    text-align: center;
+  }
+  
+  .reservation-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .reservation-form label {
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    color: var(--primary-green);
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .reservation-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--primary-green);
+    border-radius: 5px;
+  }
+  
+  .submit-btn {
+    background-color: var(--primary-yellow);
+    color: var(--primary-green);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--highlight-yellow);
+  }
+  
