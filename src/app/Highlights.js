@@ -24,20 +24,20 @@ function Highlights() {
   ];
 
   return (
-    <section className="highlights">
-      <h2>This week's specials!</h2>
-      <div className="specials-container">
-        {specials.map((special, index) => (
-          <div key={index} className="special-card">
-            <img src={special.image} alt={special.name} />
-            <h3>{special.name}</h3>
-            <p>{special.description}</p>
-            <span className="price">{special.price}</span>
-            <button className="order-btn">Order a delivery</button>
-          </div>
-        ))}
-      </div>
-    </section>
+    <section className="highlights" aria-label="Weekly Specials">
+    <h2>This week's specials!</h2>
+    <div className="specials-container">
+      {specials.map((special, index) => (
+        <div key={index} className="special-card">
+          <img src={special.image} alt={`Image of ${special.name}`} />
+          <h3>{special.name}</h3>
+          <p>{special.description}</p>
+          <span className="price">{special.price}</span>
+          <button className="order-btn" aria-live="polite">Order a delivery</button>
+        </div>
+      ))}
+    </div>
+  </section>
   );
 }
 
