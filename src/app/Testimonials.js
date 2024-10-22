@@ -8,21 +8,21 @@ function Testimonials() {
       rating: 5,
       review:
         "Amazing food and great service! Little Lemon is my new favorite restaurant.",
-      image: "/adrian.jpg",
+      image: require("../assets/adrian.png"),
     },
     {
       name: "Maria",
       rating: 4,
       review:
         "The dishes were delicious, especially the Greek salad. Highly recommend!",
-      image: "/maria.jpg",
+      image: require("../assets/maria.png"),
     },
     {
       name: "John",
       rating: 5,
       review:
         "A perfect place for a family dinner. The desserts are incredible!",
-      image: "/john.jpg",
+      image: require("../assets/john.png"),
     },
   ];
 
@@ -32,7 +32,7 @@ function Testimonials() {
       <div className="testimonials-container">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="testimonial-card">
-            <img src={testimonial.image} alt={`Photo of ${testimonial.name}`} />
+            <img src={testimonial.image} alt={testimonial.name} />
             <h3>{testimonial.name}</h3>
             <p
               className="rating"
